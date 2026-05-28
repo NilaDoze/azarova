@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azarova Studios — Behavioral Psychology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+    <div class="particles" id="particles"></div>
+
+    <nav id="navbar">
+        <a href="#" class="logo">Azarova <span>Studios</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#archive">Archive</a></li>
+            <li><a href="#assessment">Assessment</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#join">Shop</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">&#9776;</button>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-orb"></div>
+        <div class="hero-content">
+            <div class="hero-symbol">&#9670;</div>
+            <p class="hero-tag">Behavioral Psychology</p>
+            <h1>Human behavior is <em>predictable</em>.<br>Most people never notice.</h1>
+            <p class="hero-sub">We analyze influence, communication, and the patterns behind human interaction.</p>
+            <div class="hero-buttons">
+                <a href="#archive" class="btn btn-primary">Explore Archive</a>
+                <a href="#assessment" class="btn">Take Assessment</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span></span>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <section id="study">
+        <div class="section-header reveal">
+            <p class="section-label">Research Areas</p>
+            <h2 class="section-title">What We <em>Study</em></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="study-grid">
+            <div class="study-card reveal">
+                <span class="study-num">01</span>
+                <h3>Communication</h3>
+                <p>How people shape perception through language, emotion, and subtle social cues in everyday interaction.</p>
+            </div>
+            <div class="study-card reveal">
+                <span class="study-num">02</span>
+                <h3>Behavioral Patterns</h3>
+                <p>Recurring human reactions and habits. The loops people fall into without realizing.</p>
+            </div>
+            <div class="study-card reveal">
+                <span class="study-num">03</span>
+                <h3>Interpersonal Dynamics</h3>
+                <p>The balance of power, boundaries, and emotional exchange within relationships and social environments.</p>
+            </div>
+            <div class="study-card reveal">
+                <span class="study-num">04</span>
+                <h3>Awareness</h3>
+                <p>Recognizing internal patterns and external influence. The ability to respond consciously rather than automatically.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="archive">
+        <div class="section-header reveal">
+            <p class="section-label">Content Hub</p>
+            <h2 class="section-title">Psychology <em>Archive</em></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="archive-grid">
+            <div class="archive-card reveal" data-modal="apologize">
+                <span class="tag">Pattern</span>
+                <h3>People Who Never Apologize</h3>
+                <p>How some people struggle to acknowledge when they are wrong, and why this behavior often goes unnoticed in relationships.</p>
+                <div class="meta"><span>Case File 001</span><span>25/05/2026</span></div>
+            </div>
+
+            <!--
+            <div class="archive-card reveal" data-modal="narcissist">
+                <span class="tag">Pattern</span>
+                <h3>The Narcissist Playbook</h3>
+                <p>How narcissists construct reality around themselves and why most people never see the framework until it is too late.</p>
+                <div class="meta"><span>Case File 007</span><span>Analyzing...</span></div>
+            </div>
+            <div class="archive-card reveal" data-modal="silence">
+                <span class="tag">Signal</span>
+                <h3>Why Silence Creates Power</h3>
+                <p>The strategic use of absence. What people reveal when you stop filling every gap with noise.</p>
+                <div class="meta"><span>Case File 006</span><span>Analyzing...</span></div>
+            </div>
+            <div class="archive-card reveal" data-modal="pressure">
+                <span class="tag">Behavior</span>
+                <h3>People Reveal Themselves Under Pressure</h3>
+                <p>Stress does not create character, it exposes what was already there. The tells most miss.</p>
+                <div class="meta"><span>Case File 005</span><span>Analyzing...</span></div>
+            </div>
+            <div class="archive-card reveal" data-modal="confidence">
+                <span class="tag">Illusion</span>
+                <h3>The Illusion of Confidence</h3>
+                <p>Why the loudest voice in the room is rarely the most capable and how to read the quiet ones.</p>
+                <div class="meta"><span>Case File 004</span><span>Analyzing...</span></div>
+            </div>
+            <div class="archive-card reveal" data-modal="guilt">
+                <span class="tag">Emotion</span>
+                <h3>Weaponized Guilt</h3>
+                <p>How guilt is manufactured and deployed as a control mechanism in relationships and groups.</p>
+                <div class="meta"><span>Case File 003</span><span>Analyzing...</span></div>
+            </div>
+            <div class="archive-card reveal" data-modal="boundaries">
+                <span class="tag">Defense</span>
+                <h3>The Cost of Boundaries</h3>
+                <p>Why setting limits triggers aggression and why that reaction proves they were necessary.</p>
+                <div class="meta"><span>Case File 002</span><span>Analyzing...</span></div>
+            </div>
+            -->
+        </div>
+        <button id="showMoreBtn" class="btn show-more">Show More</button>
+        <div class="archive-status reveal">
+            <p><span class="pulse"></span>Archive expanding. New case files added monthly.</p>
+            <a href="https://docs.google.com/forms/d/1o-KG44cprE9qEWaGfaMpnNxEO_VKGcA1W9o1bVEfhVg" target="_blank" class="submit-idea-btn">
+                Submit a Video Idea
+            </a>
+            
+        </div>
+        
+    </section>
+
+    <section id="assessment">
+        <div class="section-header reveal">
+            <p class="section-label">Interactive</p>
+            <h2 class="section-title">Behavioral <em>Assessment</em></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="assessment-container reveal">
+            <div class="assessment-glow"></div>
+            <div class="quiz-intro" id="quizIntro">
+                <h3>Behavioral Pattern Assessment</h3>
+                <p>Explore how you think, react, and relate in different situations. 10 situational questions designed to highlight personal patterns.</p>
+                <button class="btn btn-primary" id="startQuizBtn" style="margin-top:16px">Begin Analysis</button>
+                <p class="disclaimer">Based on established principles from personality psychology and personality typology frameworks. Not a clinical diagnosis.</p>
+            </div>
+            <div id="quizContainer" style="display:none">
+                <div class="quiz-progress"><div class="quiz-progress-bar" id="progressBar"></div></div>
+                <div id="questions"></div>
+            </div>
+            <div class="quiz-result" id="quizResult">
+                <span class="result-badge">Pattern Detected</span>
+                <h2 class="result-title" id="resultTitle"></h2>
+                <img id="resultImage" class="result-image" />
+                <p class="result-desc" id="resultDesc"></p>
+                <div class="result-traits" id="resultTraits"></div>
+                <div class="childhood-section wound">
+                    <h4 class="title-wound">Origin Wound</h4>
+                    <p class="result-desc" id="resultWound"></p>
+                </div>
+                <div class="result-section fear">
+                    <h4>Underlying Fear</h4>
+                    <p id="resultFear"></p>
+                </div>
+                <div class="result-section cost">
+                    <h4>What It Costs You</h4>
+                    <p id="resultCost"></p>
+                </div>
+
+                <div class="result-section growth">
+                    <h4>Where This Evolves</h4>
+                    <p id="resultGrowth"></p>
+                </div>
+                <div class="childhood-section">
+                    <h4>Early Childhood</h4>
+                    <p class="result-desc" id="resultChildhood"></p>
+                </div>
+                <button class="btn btn-retake" id="retakeQuizBtn">Retake Assessment</button>
+                <p class="disclaimer">Based on established principles from personality psychology and personality typology frameworks. Not a clinical diagnosis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-header reveal">
+            <p class="section-label">Positioning</p>
+            <h2 class="section-title">About <em>Azarova</em></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-visual reveal">
+                <div class="symbol">&#9670;</div>
+                <div class="overlay-text">Know Thyself<br>Know Others<br>Control All</div>
+            </div>
+            <div class="about-content reveal">
+                <h3>Who We Are</h3>
+                <p>Azarova Studios is a small creative group producing video content about behavioral psychology, communication, and human patterns.</p>
+                <h3>What We Do</h3>
+                <p>We explore the subtle structures in how people think, react, and relate—highlighting patterns that often go unnoticed.</p>
+                <div class="mission">
+                    <p>Our mission is to encourage awareness, critical thinking, and a deeper understanding of human behavior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--
+    <section id="join">
+        <div class="section-header reveal">
+            <p class="section-label">Connection</p>
+            <h2 class="section-title">Join the <em>Community</em></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="join-box reveal">
+            <h3>Get Behavioral Insights</h3>
+            <p>Short breakdowns on patterns, communication, and human behavior—written to be clear, not overwhelming, yet detailed.</p>
+            <form class="join-form" id="joinForm">
+                <input type="email" placeholder="Enter your signal..." required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p class="join-note">No noise. No spam. Only what's worth reading.</p>
+        </div>
+    </section>
+    -->
+    <section id="join">
+        <div class="section-header reveal">
+            <p class="section-label">Merchandise</p>
+            <h2 class="section-title">Explore the <em>Collection</em></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="join-box reveal">
+            <h3>Wear the Mindset</h3>
+            <p>
+                Check out the official merchandise collection — designs built around behavioral patterns, identity, and psychological archetypes.  
+            </p>
+            <p>    
+                On Patreon, each video is structured as a PDF case file, breaking the ideas down into clear, readable, and deeper insights.
+            </p>
+            <button class="btn btn-primary" style="margin-top:16px" onclick="window.open('https://azarova.printify.me', '_blank')">Shop Now</button>
+            <button class="btn" style="margin-top:16px" onclick="window.open('https://www.patreon.com/cw/AzarovaStudios', '_blank')">Patreon</button>            
+        </div>
+        <div class="product-carousel">
+            <div class="product-track">
+                <div class="product-card">
+                    <img src="images/azarova-hoodie-know-thyself.jpg" alt="Hoodie" size="20px">
+                    <p class="product-title">Azarova Hoodie</p>
+                    <p class="product-subtitle">AZAROVA STUDIOS</p>
+                    <p class="product-price">€34.00</p>
+                    <div class="color-dots">
+                        <span class="dot black"></span>
+                        <span class="dot maroon"></span>
+                        <span class="dot darkchocolate"></span>
+                        <span class="dot militarygreen"></span>
+                        <span class="dot forestgreen"></span>
+                        <span class="dot indigoblue"></span>
+                        <span class="dot royal"></span>
+                        <span class="dot navy"></span>
+                    </div>
+                    <button class="btn" style="width: 100%;" onclick="window.open('https://azarova.printify.me/product/28873292', '_blank')">
+                        VIEW
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="images/azarova-pin.jpg" alt="Hoodie" size="20px">
+                    <p class="product-title">Azarova Pin</p>
+                    <p class="product-subtitle">AZAROVA STUDIOS</p>
+                    <p class="product-price">€4.50</p>
+                    <div class="color-dots">
+                        <span class="dot black"></span>
+                    </div>
+                    <button class="btn" style="width: 100%;" onclick="window.open('https://azarova.printify.me/product/28933188', '_blank')">
+                        VIEW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#" class="logo">Azarova <span>Studios</span></a>
+        <p>Behavioral Psychology &mdash; Cinematic Analysis</p>
+        <p>2026 Azarova Studios. All patterns reserved.</p>
+        <div class="social">
+            <a href="https://youtube.com/@azarova.studios" target="_blank">YouTube</a>
+            <a href="https://tiktok.com/@azarova.studios" target="_blank">TikTok</a>
+            <a href="https://patreon.com/cw/AzarovaStudios" target="_blank">Patreon</a>
+
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modalBox">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag" id="modalTag">Case File</span>
+                <h3 id="modalTitle">Title</h3>
+            </div>
+            <div class="modal-body">
+                <div class="modal-placeholder" id="modalVideo"><p>YouTube Embed &mdash; Coming Soon</p></div>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
