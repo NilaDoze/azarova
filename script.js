@@ -38,115 +38,168 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // QUIZ DATA
     const quizData = [
-        {
-            question: "In conflict, your first instinct is to...",
-            options: [
-                { text: "Point out what is wrong and how it should be corrected", type: 1 },
-                { text: "Try to keep harmony and avoid escalation", type: 9 },
-                { text: "Take control and push through the tension", type: 8 },
-                { text: "Understand what caused it before reacting", type: 5 }
-            ]
-        },
-        {
-            question: "When someone is upset, you tend to...",
-            options: [
-                { text: "Focus on helping and supporting them", type: 2 },
-                { text: "Stay emotionally aware of their reaction to you", type: 4 },
-                { text: "Stay logical and not get pulled into emotion", type: 5 },
-                { text: "Try to fix the situation quickly", type: 1 }
-            ]
-        },
-        {
-            question: "When you feel unsure about yourself, you...",
-            options: [
-                { text: "Push harder to achieve and prove yourself", type: 3 },
-                { text: "Seek reassurance or guidance from others", type: 6 },
-                { text: "Withdraw and analyze internally", type: 5 },
-                { text: "Distract yourself and move on quickly", type: 7 }
-            ]
-        },
-        {
-            question: "In groups, you usually...",
-            options: [
-                { text: "Take charge if needed", type: 8 },
-                { text: "Observe quietly before engaging", type: 5 },
-                { text: "Adapt to fit the mood of the group", type: 9 },
-                { text: "Try to stand out in some way", type: 3 }
-            ]
-        },
-        {
-            question: "Under stress, you tend to...",
-            options: [
-                { text: "Become controlling or direct", type: 8 },
-                { text: "Withdraw and detach", type: 5 },
-                { text: "Seek comfort or distraction", type: 7 },
-                { text: "Overthink what others expect from you", type: 6 }
-            ]
-        },
-        {
-            question: "What drives you most?",
-            options: [
-                { text: "Being competent and successful", type: 3 },
-                { text: "Being needed and valued", type: 2 },
-                { text: "Being correct and morally aligned", type: 1 },
-                { text: "Understanding how things work deeply", type: 5 }
-            ]
-        },
-        {
-            question: "You naturally focus on...",
-            options: [
-                { text: "Mistakes and improvements", type: 1 },
-                { text: "People's emotional states", type: 2 },
-                { text: "Efficiency and outcomes", type: 3 },
-                { text: "Hidden meanings and patterns", type: 4 }
-            ]
-        },
-        {
-            question: "When making decisions, you rely most on...",
-            options: [
-                { text: "Logic and analysis", type: 5 },
-                { text: "Gut feeling and possibility", type: 7 },
-                { text: "Security and risk avoidance", type: 6 },
-                { text: "Strength and certainty", type: 8 }
-            ]
-        },
-        {
-            question: "What feels most uncomfortable?",
-            options: [
-                { text: "Being useless or incompetent", type: 3 },
-                { text: "Being abandoned or unsupported", type: 6 },
-                { text: "Being controlled or restricted", type: 8 },
-                { text: "Being emotionally ordinary or unseen", type: 4 }
-            ]
-        },
-        {
-            question: "Your natural energy is more...",
-            options: [
-                { text: "Calm and grounded", type: 9 },
-                { text: "High-energy and exploratory", type: 7 },
-                { text: "Focused and analytical", type: 5 },
-                { text: "Driven and structured", type: 1 }
-            ]
-        },
-        {
-            question: "In relationships, you tend to...",
-            options: [
-                { text: "Support and take care of others", type: 2 },
-                { text: "Stay independent and self-contained", type: 5 },
-                { text: "Seek depth and emotional intensity", type: 4 },
-                { text: "Maintain balance and avoid conflict", type: 9 }
-            ]
-        },
-        {
-            question: "When you want to improve yourself, you...",
-            options: [
-                { text: "Set strict goals and discipline yourself", type: 1 },
-                { text: "Focus on achievement and recognition", type: 3 },
-                { text: "Explore new ideas and experiences", type: 7 },
-                { text: "Analyze yourself deeply", type: 5 }
-            ]
-        }
-
+    {
+        question: "When you wake up, your first thought is usually about...",
+        options: [
+        { text: "What needs to be fixed today", type: 1 },
+        { text: "Who might need my help", type: 2 },
+        { text: "What I need to accomplish", type: 3 },
+        { text: "How I'm feeling inside", type: 4 }
+        ]
+    },
+    {
+        question: "Your friends would most likely describe you as...",
+        options: [
+        { text: "Observant and private", type: 5 },
+        { text: "Fun and spontaneous", type: 7 },
+        { text: "Direct and protective", type: 8 },
+        { text: "Loyal and cautious", type: 6 }
+        ]
+    },
+    {
+        question: "At a party where you know no one, you...",
+        options: [
+        { text: "Find someone who looks like they need company", type: 2 },
+        { text: "Judge whether things are being done properly", type: 1 },
+        { text: "Blend in and go with the vibe", type: 9 },
+        { text: "Network and make a strong impression", type: 3 }
+        ]
+    },
+    {
+        question: "When you make a mistake, you...",
+        options: [
+        { text: "Feel it deeply and wonder what it says about you", type: 4 },
+        { text: "Analyze what went wrong privately", type: 5 },
+        { text: "Worry it means something worse is coming", type: 6 },
+        { text: "Laugh it off and distract yourself", type: 7 }
+        ]
+    },
+    {
+        question: "Your ideal weekend involves...",
+        options: [
+        { text: "Relaxing with no pressure or demands", type: 9 },
+        { text: "Organizing, planning, or improving something", type: 1 },
+        { text: "Helping someone or being with loved ones", type: 2 },
+        { text: "High-intensity activity or complete freedom", type: 8 }
+        ]
+    },
+    {
+        question: "In a team project, you naturally...",
+        options: [
+        { text: "Anticipate problems and build backup plans", type: 6 },
+        { text: "Bring unique perspective and emotional truth", type: 4 },
+        { text: "Drive toward the goal and manage image", type: 3 },
+        { text: "Research and provide expert insight", type: 5 }
+        ]
+    },
+    {
+        question: "What drains you most?",
+        options: [
+        { text: "Conflict, pressure, or having to assert yourself", type: 9 },
+        { text: "Boredom, limitation, or emotional heaviness", type: 7 },
+        { text: "Chaos, laziness, or moral compromise", type: 1 },
+        { text: "Weakness, injustice, or being controlled", type: 8 }
+        ]
+    },
+    {
+        question: "Your inner critic sounds like...",
+        options: [
+        { text: "You don't know enough yet", type: 5 },
+        { text: "You're selfish if you put yourself first", type: 2 },
+        { text: "You're only worth what you achieve", type: 3 },
+        { text: "You'll never be truly understood", type: 4 }
+        ]
+    },
+    {
+        question: "When someone criticizes you, you...",
+        options: [
+        { text: "Make a joke or change the subject", type: 7 },
+        { text: "Confront them or shut them out", type: 8 },
+        { text: "Question their motives and your safety", type: 6 },
+        { text: "Absorb it to avoid tension", type: 9 }
+        ]
+    },
+    {
+        question: "Your relationship with authority is...",
+        options: [
+        { text: "I respect it when it's principled, challenge it when it's not", type: 1 },
+        { text: "I want to become the authority", type: 3 },
+        { text: "I try to be helpful to those in charge", type: 2 },
+        { text: "I feel alienated from most institutions", type: 4 }
+        ]
+    },
+    {
+        question: "What do you most want others to see in you?",
+        options: [
+        { text: "Reliability and loyalty", type: 6 },
+        { text: "Joy and openness", type: 7 },
+        { text: "Strength and honesty", type: 8 },
+        { text: "Intelligence and competence", type: 5 }
+        ]
+    },
+    {
+        question: "When you're alone for too long, you...",
+        options: [
+        { text: "Get restless about uncompleted tasks", type: 1 },
+        { text: "Feel lonely and reach out to someone", type: 2 },
+        { text: "Lose momentum and merge into comfort", type: 9 },
+        { text: "Lose sense of self without an audience", type: 3 }
+        ]
+    },
+    {
+        question: "What triggers you fastest?",
+        options: [
+        { text: "Being misunderstood or dismissed", type: 4 },
+        { text: "Restriction, negativity, or being trapped", type: 7 },
+        { text: "Intrusion, ignorance, or being overwhelmed", type: 5 },
+        { text: "Betrayal, ambiguity, or blind obedience", type: 6 }
+        ]
+    },
+    {
+        question: "Your default emotional state is closest to...",
+        options: [
+        { text: "Intensity or protective anger", type: 8 },
+        { text: "Serene contentment or numbness", type: 9 },
+        { text: "Frustration that things aren't right yet", type: 1 },
+        { text: "Warmth with an undercurrent of need", type: 2 }
+        ]
+    },
+    {
+        question: "How do you handle compliments?",
+        options: [
+        { text: "Feel awkward or question their sincerity", type: 4 },
+        { text: "Feel suspicious or uncomfortable", type: 5 },
+        { text: "Wonder what they want from me", type: 6 },
+        { text: "Accept gracefully — they're fuel", type: 3 }
+        ]
+    },
+    {
+        question: "What kind of legacy do you want to leave?",
+        options: [
+        { text: "A world where the weak are protected", type: 8 },
+        { text: "A life full of experiences and joy shared", type: 7 },
+        { text: "A world that's more correct and just", type: 1 },
+        { text: "A peaceful, harmonious environment", type: 9 }
+        ]
+    },
+    {
+        question: "When plans change suddenly, you...",
+        options: [
+        { text: "Feel disrupted and emotionally thrown", type: 4 },
+        { text: "Withdraw to reassess the situation", type: 5 },
+        { text: "Pivot fast and look good doing it", type: 3 },
+        { text: "Worry about how it affects everyone", type: 2 }
+        ]
+    },
+    {
+        question: "What do you need most from others?",
+        options: [
+        { text: "Honesty and not trying to control me", type: 8 },
+        { text: "Enthusiasm and companionship in fun", type: 7 },
+        { text: "Reassurance and loyalty", type: 6 },
+        { text: "Peace and acceptance as I am", type: 9 }
+        ]
+    }
     ];
 
     const resultProfiles = {
@@ -286,7 +339,8 @@ document.addEventListener("DOMContentLoaded", () => {
             ]
         }
     };
-
+    
+    let consistency = {1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0};
     let currentQuestion = 0;
     let scores = {
         1: 0, // Reformer
@@ -315,13 +369,19 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let i = 0; i < q.options.length; i++) {
             const t = q.options[i].type;
             const txt = q.options[i].text;
-            opts += '<button class="quiz-option" data-type="' + t + '">' + txt + '</button>';
+            opts += `<button class="quiz-option" data-type="${t}" data-weight="${q.options[i].weight || 1}">
+            ${ txt }
+            </button >`;
         }
         container.innerHTML = '<div class="quiz-question active"><span class="q-num">Question ' + (currentQuestion + 1) + ' of ' + quizData.length + '</span><h4>' + q.question + '</h4><div class="quiz-options">' + opts + '</div></div>';
     }
 
-    function answerQuestion(type) {
-        scores[type]++;
+    function answerQuestion(type, weight) {
+        weight = weight || 1; // fallback if weight is missing
+        scores[type] += weight;
+        if (weight >= 2) {
+            consistency[type]++;
+        }
         currentQuestion++;
         if (currentQuestion < quizData.length) {
             renderQuestion();
@@ -481,7 +541,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const btn = e.target.closest('.quiz-option');
         if (btn) {
             const type = btn.getAttribute('data-type');
-            answerQuestion(type);
+            const weight = Number(btn.getAttribute('data-weight')) || 1;
+            answerQuestion(type, weight);
         }
     });
 
