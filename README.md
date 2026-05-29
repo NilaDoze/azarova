@@ -9,9 +9,9 @@ Azarova is my YouTube channel [@azarova.studios](https://www.youtube.com/@azarov
 
 ## What You'll Find
 
-* 🎥 Archives (YouTube content)
-* 🧠 Behavioral Assessment (Quiz)
-* 🛍️ Azarova Merch
+* 🎥 [Archives (YouTube content) ↗](https://niladoze.github.io/azarova/#archive)
+* 🧠 [Behavioral Assessment (Quiz) ↗](https://niladoze.github.io/azarova/#assessment)
+* 🛍️ [Azarova Merch ↗](https://niladoze.github.io/azarova/#join)
 
 
 
