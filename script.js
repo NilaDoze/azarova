@@ -463,7 +463,7 @@ document.addEventListener("DOMContentLoaded", () => {
         apologize: {
             tag: "Pattern Analysis",
             title: "People Who Never Apologize",
-            video: "",
+            video: "u-bP67JZCuY",
             content: '<div class="modal-section"><h4>The Pattern</h4><p>The absence of accountability is often not simple refusal, but a protective response where responsibility is avoided to preserve self-image, emotional stability, or control within a relationship.</p></div><div class="modal-section"><h4>The Mechanism</h4><p>In some cases this reflects narcissistic self-protection, in others it stems from shame-based or emotionally avoidant coping strategies — where admitting fault feels unsafe, so responsibility is reframed, minimized, or redirected.</p></div><div class="modal-section"><h4>The Trap</h4><p>These interactions often lead to verbal loops where one person seeks recognition and the other continues to deflect. The more effort is spent proving the point, the further the conversation moves away from accountability and into circular justification.</p></div><div class="modal-section"><h4>The Resolution</h4><p>Progress doesn’t come from stronger arguments, but from stepping out of the loop. State your boundary clearly, avoid over-explaining, and stop repeating yourself. Clarity comes when you set boundaries and consequences instead of staying in a back-and-forth that allows avoidance to continue.</p></div>'
         },
         narcissist: {
