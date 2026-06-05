@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158.96 156.89">
+  <g id="Layer_3" data-name="Layer 3">
+    <ellipse cx="79.48" cy="78.44" rx="77.48" ry="76.44" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="13.49" y1="118.52" x2="79.48" y2="2" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="146.6" y1="118.52" x2="79.48" y2="2" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="14.54" y1="116.67" x2="41.71" y2="116.33" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="146.6" y1="116.33" x2="117.86" y2="116.33" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="44.72" y1="146.77" x2="30.46" y2="21.84" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="154.6" y1="70.1" x2="28.97" y2="21.84" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="2" y1="70.1" x2="129.42" y2="21.84" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="43.23" y1="133.77" x2="4.02" y2="69.34" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="115.19" y1="144.47" x2="156.13" y2="67.22" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="129.42" y1="21.84" x2="114.93" y2="146.77" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <polygon points="52.79 77.56 64.68 84.31 97.34 68.44 71.01 87.67 67.9 99.4 76.45 92.78 85.12 97.78 105.34 64.11 52.79 77.56" fill="#ebe8dc"/>
+    <path d="M96.79,107.56c-.05.61-.33,2.99-2.33,4.89-1.61,1.53-3.42,1.9-4.11,2,.49.03,2.85.22,4.67,2.22,1.65,1.81,1.76,3.9,1.78,4.44-.03-.39-.18-2.81,1.67-4.78,1.94-2.08,4.52-2.01,4.89-1.99-.35.02-2.93.16-4.89-1.89-1.92-2.01-1.7-4.53-1.67-4.89Z" fill="#ebe8dc"/>
+    <path d="M62.01,97.33c-12.39,6.59-14.85,20.69-9.78,27.22,4.29,5.53,15.17,7.17,24.56,1.33" fill="none" stroke="#ff0019" stroke-miterlimit="10"/>
+    <ellipse cx="78.42" cy="124.96" rx="2.39" ry="1.9" transform="translate(-60.86 76.34) rotate(-38.64)" fill="#ff0019"/>
+    <polygon points="76.45 92.78 70.88 88.16 67.99 99.07 76.45 92.78" fill="#e2dfd3"/>
+  </g>
+</svg>

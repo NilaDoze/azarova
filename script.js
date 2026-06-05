@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resultProfiles = {
         1: {
             title: "Type 1 — The Reformer",
-            image: "images/enneagram/1.png",
+            image: "images/enneagram/1.svg",
             desc: "Driven by internal standards. You notice what is wrong before what is right. Order, correctness, and improvement are your default lens on reality.",
             wound: "You learned that being imperfect was not safe.",
             fear: "Being wrong, corrupt, or fundamentally flawed.",
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         2: {
             title: "Type 2 — The Helper",
-            image: "images/enneagram/2.png",
+            image: "images/enneagram/2.svg",
             desc: "You read emotional needs quickly and adapt to them. Connection is your primary currency, even when unspoken.",
             wound: "Love felt conditional on how useful you were to others.",
             fear: "Being unwanted or unloved.",
@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         3: {
             title: "Type 3 — The Achiever",
-            image: "images/enneagram/3.png",
+            image: "images/enneagram/3.svg",
             desc: "Identity is built through output. You naturally orient toward success, recognition, and measurable value.",
             wound: "You were valued for performance rather than who you were.",
             fear: "Being worthless without achievement — that who you are is not enough on its own.",
@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         4: {
             title: "Type 4 — The Individualist",
-            image: "images/enneagram/4.png",
+            image: "images/enneagram/4.svg",
             desc: "You experience depth differently. Meaning, identity, and emotional contrast shape how you interpret everything.",
             wound: "You felt something essential about you was missing.",
             fear: "Having no identity or significance.",
@@ -265,7 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         5: {
             title: "Type 5 — The Investigator",
-            image: "images/enneagram/5.png",
+            image: "images/enneagram/5.svg",
             desc: "You step back before you engage. Understanding comes before participation. Information creates safety.",
             wound: "The world felt intrusive, overwhelming, or draining.",
             fear: "Being invaded, overwhelmed, or incapable.",
@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         6: {
             title: "Type 6 — The Loyalist",
-            image: "images/enneagram/6.png",
+            image: "images/enneagram/6.svg",
             desc: "You scan for stability and risk. Trust is not automatic — it is tested, verified, and maintained.",
             wound: "Safety and trust in the world felt uncertain.",
             fear: "Being unsafe, unsupported, or unprepared.",
@@ -295,7 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         7: {
             title: "Type 7 — The Enthusiast",
-            image: "images/enneagram/7.png",
+            image: "images/enneagram/7.svg",
             desc: "You move toward possibility. Experience, stimulation, and escape from limitation shape your direction.",
             wound: "Pain felt overwhelming or inescapable.",
             fear: "Being trapped in pain or limitation.",
@@ -310,7 +310,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         8: {
             title: "Type 8 — The Challenger",
-            image: "images/enneagram/8.png",
+            image: "images/enneagram/8.svg",
             desc: "You naturally push against resistance. Control, strength, and directness define your interaction with the world.",
             wound: "Vulnerability once led to being controlled or hurt.",
             fear: "Being controlled, weak, or vulnerable.",
@@ -325,7 +325,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         9: {
             title: "Type 9 — The Peacemaker",
-            image: "images/enneagram/9.png",
+            image: "images/enneagram/9.svg",
             desc: "You stabilize environments by reducing friction. Harmony often comes at the cost of your own voice.",
             wound: "Your presence felt like it could disturb harmony.",
             fear: "Conflict, disconnection, or loss of peace.",
