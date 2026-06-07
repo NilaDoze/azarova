@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158.96 156.89">
+  <g id="Layer_3" data-name="Layer 3">
+    <ellipse cx="79.48" cy="78.44" rx="77.48" ry="76.44" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="13.49" y1="118.52" x2="79.48" y2="2" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="146.6" y1="118.52" x2="79.48" y2="2" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="14.54" y1="116.67" x2="41.71" y2="116.33" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="146.6" y1="116.33" x2="117.86" y2="116.33" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="44.72" y1="146.77" x2="30.46" y2="21.84" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="154.6" y1="70.1" x2="28.97" y2="21.84" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="2" y1="70.1" x2="129.42" y2="21.84" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="43.23" y1="133.77" x2="4.02" y2="69.34" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="115.19" y1="144.47" x2="156.13" y2="67.22" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="129.42" y1="21.84" x2="114.93" y2="146.77" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    <g>
+      <path d="M77.44,57.21s10.61,11.44,25.94,10.92c0,8.15-.89,27.56-1.78,30.37s-2.07,8.59-5.78,14.07-18.15,14.81-18.15,14.81" fill="none" stroke="#ebe8dc" stroke-miterlimit="10" stroke-width="2"/>
+      <path d="M78.83,57.21s-10.74,11.7-26.07,11.19c0,8.15.89,27.56,1.78,30.37s2.07,8.59,5.78,14.07c3.7,5.48,18.44,14.55,18.44,14.55" fill="none" stroke="#ebe8dc" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g>
+      <path d="M77.31,62.44s9.11,9.76,22.27,9.32c0,6.95-.76,23.52-1.53,25.92s-1.78,7.33-4.96,12.01-15.58,12.65-15.58,12.65" fill="none" stroke="#ff0019" stroke-miterlimit="10" stroke-width="2"/>
+      <path d="M78.5,62.44s-9.22,9.99-22.38,9.55c0,6.95.76,23.52,1.53,25.92s1.78,7.33,4.96,12.01c3.18,4.68,15.95,12.42,15.95,12.42" fill="none" stroke="#ff0019" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <path d="M68.62,77.68h2.34c.27,0,.48.22.48.48v1.7c0,.27.22.48.48.48h2.37c.27,0,.48-.22.48-.48v-1.96c0-.27.22-.48.48-.48h3.74c.27,0,.48.22.48.48v1.96c0,.27.22.48.48.48h2.55c.27,0,.48-.22.48-.48v-1.96c0-.27.22-.48.48-.48h2.87c.27,0,.48.22.48.48v6.63c0,.27-.22.48-.48.48h-17.39c-.26,0-.47-.2-.48-.46l-.34-6.37c-.01-.28.21-.51.48-.51Z" fill="#ebe8dc"/>
+    <path d="M70.72,87.24h13.28s.44,11.5,1.17,12.67,2.06,1.28,2.06,1.28v4.94h-20.11v-4.5s1.56-.22,2.26-1.13c.48-.63,1.35-13.26,1.35-13.26Z" fill="#ebe8dc"/>
+  </g>
+</svg>

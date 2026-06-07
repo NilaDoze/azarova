@@ -463,6 +463,7 @@ document.addEventListener("DOMContentLoaded", () => {
         apologize: {
             tag: "Pattern Analysis",
             title: "People Who Never Apologize",
+            link: "cases/case-001.html",
             video: "u-bP67JZCuY",
             content: '<div class="modal-section"><h4>The Pattern</h4><p>The absence of accountability is often not simple refusal, but a protective response where responsibility is avoided to preserve self-image, emotional stability, or control within a relationship.</p></div><div class="modal-section"><h4>The Mechanism</h4><p>In some cases this reflects narcissistic self-protection, in others it stems from shame-based or emotionally avoidant coping strategies — where admitting fault feels unsafe, so responsibility is reframed, minimized, or redirected.</p></div><div class="modal-section"><h4>The Trap</h4><p>These interactions often lead to verbal loops where one person seeks recognition and the other continues to deflect. The more effort is spent proving the point, the further the conversation moves away from accountability and into circular justification.</p></div><div class="modal-section"><h4>The Resolution</h4><p>Progress doesn’t come from stronger arguments, but from stepping out of the loop. State your boundary clearly, avoid over-explaining, and stop repeating yourself. Clarity comes when you set boundaries and consequences instead of staying in a back-and-forth that allows avoidance to continue.</p></div>'
         },
@@ -505,6 +506,17 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('modalTag').textContent = data.tag;
         document.getElementById('modalTitle').textContent = data.title;
         document.getElementById('modalContent').innerHTML = data.content;
+        
+        // 🔗 footer (safe link injection)
+        const footer = document.getElementById("modalFooter");
+
+        footer.innerHTML = data.link
+            ? `<a href="${data.link}" class="deep-dive-link">
+                → Deeper Dive into Case Archive
+            </a>`
+            : '';
+
+        // 🎥 video handling (fixed + safer)
         const videoContainer = document.getElementById('modalVideo');
 
         if (data.video) {
@@ -530,8 +542,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('modalOverlay').classList.remove('active');
         document.body.style.overflow = '';
     }
-
-    // EVENT LISTENERS (replacing inline onclick handlers)
+    
 
     // Quiz start button
     document.getElementById('startQuizBtn').addEventListener('click', startQuiz);

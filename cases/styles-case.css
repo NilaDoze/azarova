@@ -18,12 +18,18 @@
   }
 
   .page {
-    width: 250mm;
-    min-height: 297mm;
-    padding: 20mm 24mm 24mm 24mm;
+    width: 100%;
+    max-width: 250mm;
+
+    min-height: 100vh;
+
+    padding: 20mm 24mm;
     margin: 0 auto;
+
     background: #0f0f0f;
     position: relative;
+
+    box-sizing: border-box;
     page-break-after: always;
     border-bottom: 1px solid #1a1a1a;
   }
@@ -186,7 +192,7 @@
 
   .meta-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px 28px;
     font-size: 10pt;
     margin-bottom: 24px;
@@ -514,3 +520,30 @@
     color: #888;
     margin-bottom: 0;
   }
+
+  @media (max-width: 768px) {
+  .page {
+    padding: 16px 14px;
+    border-bottom: none;
+  }
+  .meta-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .meta-val {
+    font-size: 8pt;
+  }  
+  .page-footer {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+
+    margin-top: 32px;
+
+    flex-direction: column;
+    gap: 6px;
+
+    text-align: center;
+  }
+}

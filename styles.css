@@ -650,6 +650,17 @@
             height: 100%;
             border: 0;
         }
+        .deep-dive-link {
+            color: #555;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 1px;
+            transition: 0.5s;
+        }
+
+        .deep-dive-link:hover {
+            color: #ff0000;
+        }
         .modal::-webkit-scrollbar {
             display: none; /* Chrome / Safari */
         }

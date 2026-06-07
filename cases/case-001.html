@@ -4,13 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./styles-case.css">
+<style>
+  #music-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      background: #252323;
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  #music-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  }
+  #music-btn.muted {
+      opacity: 0.6;
+  }
+  /* Gentle pulse animation when playing */
+  @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+  }
+  #music-btn.playing {
+      animation: pulse 2s infinite;
+  }
+</style>
 <title>CASE 001 — THE ARCHIVE</title>
 <base target="_blank">
 </head>
 <body>
+<audio autoplay loop id="bg-music">
+  <source src="../images/malibU.mp3" type="audio/mpeg">
+</audio>
 
 <!-- ==================== COVER ==================== -->
 <div class="page cover-page">
+  <button id="music-btn">🔉</button>
   <div class="cover-stamp">ARCHIVAL DOCUMENT</div>
   <div class="cover-case">CASE 001</div>
   <div class="cover-title">"The people who never apologize — and what happens when you call them out"</div>
@@ -34,13 +74,13 @@
     <div class="section">
       <div class="section-label">From the Video</div>
       <div class="section-body">
-        <p class="lead">If you watched the video, you already know the setup. Someone hurts you. You tell them. And instead of "I'm sorry," you get everything but.</p>
+        <p class="lead">If you watched the video, you already know the setup. Someone hurts you. You tell them. And instead of "I'm sorry," you get everything but that.</p>
 
         <p>This document picks up where the video left off. The video introduced the pattern — the deflection, the minimization, the fake apology, the silence. This file goes deeper into <em>why</em> it happens, <em>who</em> does it, and what you can actually do about it.</p>
 
         <div class="video-bridge">
           <div class="bridge-label">VIDEO REFERENCE</div>
-          <p>"The People Who Never Apologize" — YouTube, 2026.05.31. If you have not watched it, this document will still make sense, but the video provides the visual and narrative foundation.</p>
+          <p><a href="https://www.youtube.com/watch?v=u-bP67JZCuY&t=9s" style=" color: #aaa;">"The People Who Never Apologize"</a> — YouTube, 2026.05.30. If you have not watched it, this document will still make sense, but the video provides the visual and narrative foundation.</p>
         </div>
 
         <div class="meta-grid">
@@ -50,7 +90,7 @@
           </div>
           <div class="meta-item">
             <span class="meta-key">Date Logged:</span>
-            <span class="meta-val">2026.05.31</span>
+            <span class="meta-val">2026.05.30</span>
           </div>
           <div class="meta-item">
             <span class="meta-key">Source:</span>
@@ -93,13 +133,13 @@
     <div class="section">
       <div class="section-label">The Three Types</div>
       <div class="section-body">
-        <p>Through research, interviews, and the patterns that show up again and again in the comment sections and DMs, three distinct profiles emerged. They are not clinical diagnoses. They are patterns. Most people who struggle to apologize fit one of these three types — sometimes two, rarely all three.</p>
+        <p>Through research, three distinct profiles emerged. They are not clinical diagnoses. They are patterns. Most people who struggle to apologize fit one of these three types — sometimes two, rarely all three.</p>
 
         <p style="margin-top:20px;"><strong style="color:#e0e0e0;">Type A: The Strategist</strong></p>
         <p>This person knows they are wrong. They have calculated the cost of admitting it, and the cost is too high. Not because the apology itself is damaging, but because <span class="highlight">apologizing would mean giving up control</span>. In their mind, the person who apologizes is the person who loses leverage. They will deflect, minimize, or rewrite history before they hand over that power.</p>
 
         <div class="testimony">
-          <div class="subject">ARCHIVE MEMBER, SUBMITTED ANONYMOUSLY</div>
+          <div class="subject">ARCHIVE RECORD, IDENTITY WITHHELD</div>
           <div class="quote">"I don't apologize at work because it opens the door. Once you admit fault, every mistake you've ever made becomes ammunition. I would rather look like an asshole than look incompetent."</div>
         </div>
 
@@ -107,7 +147,7 @@
         <p>This person genuinely does not believe they did anything wrong. Their internal narrative is airtight. Every action has a justification. Every hurt caused was actually the other person's fault, or a misunderstanding, or "not that big of a deal." They are not lying to you. They are lying to themselves, and they have been doing it for so long that the lie feels like memory.</p>
 
         <div class="testimony">
-          <div class="subject">ARCHIVE MEMBER, SUBMITTED ANONYMOUSLY</div>
+          <div class="subject">ARCHIVE RECORD, IDENTITY WITHHELD</div>
           <div class="quote">"My mother has never apologized for anything in her life. When I confronted her about my childhood, she said, 'I did the best I could with what I had.' She believes that. She has to believe that. If she lets one crack in, the whole wall comes down."</div>
         </div>
 
@@ -115,7 +155,7 @@
         <p>This person is terrified of apologizing because <span class="highlight">an apology feels like total annihilation</span>. It is not about control or belief. It is about survival. In their nervous system, admitting wrongness triggers the same response as physical danger. They will panic, rage, shut down, or disappear before they will say "I'm sorry." They are not cruel. They are cornered.</p>
 
         <div class="testimony">
-          <div class="subject">ARCHIVE MEMBER, SUBMITTED ANONYMOUSLY</div>
+          <div class="subject">ARCHIVE RECORD, IDENTITY WITHHELD</div>
           <div class="quote">"When my partner says I hurt them, my chest tightens. I can't breathe. I either blow up and say they're being dramatic, or I leave and don't come back for hours. I know I'm wrong. I just can't say it. It feels like dying."</div>
         </div>
       </div>
@@ -139,11 +179,11 @@
     <div class="section">
       <div class="section-label">What the Research Says</div>
       <div class="section-body">
-        <p>The video touched on this, but here is the fuller picture. When researchers present people with a realistic conflict scenario and ask how they would respond, the results are stark.</p>
+        <p>The video touched on this, but here is the fuller picture. When researchers present people with a realistic conflict scenario and ask how they would respond, the pattern is consistent.</p>
 
         <div class="big-stat">
           <div class="number">67%</div>
-          <div class="label">OF RESPONDENTS SAID THEY WOULD "EXPLAIN THEIR SIDE"<br>RATHER THAN APOLOGIZE FIRST</div>
+          <div class="label">MOST PEOPLE DEFAULT TO EXPLAINING THEMSELVES <br> RATHER THAN APOLOGIZING.</div>
         </div>
 
         <p>Explaining is not apologizing. Explaining is defending. And in the heat of conflict, most people choose defense over repair.</p>
@@ -152,26 +192,31 @@
           <div class="bar-row">
             <span class="bar-label">Explain / Defend</span>
             <div class="bar-track"><div class="bar-fill" style="width: 67%;"></div></div>
-            <span class="bar-val">67%</span>
+            <span class="bar-val">~67%</span>
           </div>
           <div class="bar-row">
             <span class="bar-label">Apologize First</span>
             <div class="bar-track"><div class="bar-fill" style="width: 18%;"></div></div>
-            <span class="bar-val">18%</span>
+            <span class="bar-val">~18%</span>
           </div>
           <div class="bar-row">
             <span class="bar-label">Withdraw / Shut Down</span>
             <div class="bar-track"><div class="bar-fill" style="width: 12%;"></div></div>
-            <span class="bar-val">12%</span>
+            <span class="bar-val">~12%</span>
           </div>
           <div class="bar-row">
             <span class="bar-label">Escalate / Attack</span>
             <div class="bar-track"><div class="bar-fill" style="width: 3%;"></div></div>
-            <span class="bar-val">3%</span>
+            <span class="bar-val">~3%</span>
           </div>
         </div>
-        <p class="small" style="margin-bottom:20px;">Figure 1. Aggregated response data from conflict scenario studies (Tavris & Aronson, 2007; follow-up replication studies, 2019–2024). n ≈ 4,300 across samples.</p>
-
+        <p class="small" style="margin-bottom:20px;">
+        Figure 1. Illustrative response model of conflict behavior patterns based on established theories in self-justification, cognitive dissonance, and interpersonal conflict ( 
+        <a href="https://en.wikipedia.org/wiki/Mistakes_Were_Made_(but_Not_by_Me)" style="color:#555" target="_blank">Tavris & Aronson, 2007</a>; 
+        <a href="https://books.google.de/books?id=VgdhUpkBklQC&redir_esc=y" style="color:#555" target="_blank">Lazare, 2004</a>; 
+        <a href="https://en.wikipedia.org/wiki/The_Presentation_of_Self_in_Everyday_Life" style="color:#555" target="_blank">Goffman, 1959</a>). 
+        Values are conceptual and not derived from empirical population data.
+        </p>
         <p>But the more interesting finding comes from the follow-up question: <em>"If you chose to explain rather than apologize, what were you trying to achieve?"</em></p>
 
         <table>
@@ -237,7 +282,7 @@
 
         <div class="quote-block">
           "The inability to apologize is rarely about the other person. It is almost always about the apologizer's relationship with their own shame."
-          <div class="source">— DR. BRENÉ BROWN, RESEARCH PROFESSOR, UNIVERSITY OF HOUSTON</div>
+          <div class="source">— PARAPHRASE INSPIRED BY BRENE BROWN’S SHAME AND VULNERABILITY FRAMEWORK</div>
         </div>
 
         <p>Shame researcher Brené Brown makes a critical distinction: guilt is <em>I did something bad</em>. Shame is <em>I am something bad</em>. People who cannot apologize are often people who cannot tolerate guilt because for them, guilt immediately becomes shame. The apology is not a bridge. It is a trap door.</p>
@@ -268,25 +313,22 @@
 
         <p><strong style="color:#e0e0e0;">Case Study 1: The Birthday</strong></p>
         <p>A father forgets his child's birthday. Not a text, not a call. When it is brought up three days later, he says, "You know I'm bad with dates. Your mother always handled that stuff. Besides, you're an adult now — do you really need me to remember?" He turns his forgetfulness into their neediness. The child ends up apologizing for making him feel bad.</p>
-        <p class="small">Pattern observed across 34+ submissions and comment threads.</p>
 
         <hr>
 
         <p><strong style="color:#e0e0e0;">Case Study 2: The Group Chat</strong></p>
         <p>A friend makes a joke at someone's expense in front of everyone. It is not funny — it is cruel. When confronted privately, they post screenshots of the conversation in the group chat with the caption "Someone's sensitive today." Then they say, "I'm sorry you can't take a joke." The entire group turns. They never apologized. They weaponized the fake apology and made the victim the villain.</p>
-        <p class="small">Pattern observed across 28+ submissions and comment threads.</p>
 
         <hr>
 
         <p><strong style="color:#e0e0e0;">Case Study 3: The Marriage</strong></p>
         <p>After fifteen years, a partner finally asks for acknowledgment of an affair. Not the details — just admission that it happened and that it hurt. The other person looks at them and says, "I don't know what you want me to say. It's in the past. Why are you bringing this up now?" They never say they are sorry. They say the partner is dwelling. The marriage ends six months later.</p>
-        <p class="small">Pattern observed across 41+ submissions and comment threads.</p>
 
         <hr>
 
         <p><strong style="color:#e0e0e0;">Case Study 4: The Workplace</strong></p>
         <p>A manager takes credit for a subordinate's project in front of the director. The subordinate has the emails proving they did the work. When confronted privately, the manager says, "In this industry, you have to learn to share the spotlight. I was advocating for the team. If you're going to be territorial about your work, you're not going to last here." They make the boundary into a weakness. Never apologize. The subordinate quits two weeks later.</p>
-        <p class="small">Pattern observed across 19+ submissions and comment threads.</p>
+        <p class="small">These are composite scenarios based on recurring interpersonal patterns in real-world narratives.</p>
 
         <hr>
 
@@ -317,10 +359,10 @@
         <p>Calling out a non-apologizer does not typically produce the response you want. It produces one of four predictable reactions, each designed to protect the self-concept at the expense of the relationship:</p>
 
         <p style="margin-top:20px;"><strong style="color:#e0e0e0;">Reaction 1: The DARVO</strong></p>
-        <p><strong>D</strong>eny, <strong>A</strong>ttack, and <strong>R</strong>everse <strong>V</strong>ictim and <strong>O</strong>ffender. This is a documented psychological pattern, first identified in the context of sexual misconduct but applicable far beyond. The person denies the offense, attacks the person who confronted them, and reframes themselves as the real victim.</p>
+        <p><strong>D</strong>eny, <strong>A</strong>ttack, and <strong>R</strong>everse <strong>V</strong>ictim and <strong>O</strong>ffender. This is a documented psychological pattern commonly observed in high-conflict or abusive dynamics, first identified in the context of sexual misconduct but applicable far beyond. The person denies the offense, attacks the person who confronted them, and reframes themselves as the real victim.</p>
 
         <div class="testimony">
-          <div class="subject">ARCHIVE MEMBER, SUBMITTED ANONYMOUSLY</div>
+          <div class="subject">ARCHIVE RECORD, IDENTITY WITHHELD</div>
           <div class="quote">"I told my sister she had been gossiping about me behind my back. She said I was paranoid, that I always think people are out to get me, and that she was 'worried about my mental health.' By the end of the conversation, I was comforting her for being so concerned about me. I never got the apology. I got diagnosed."</div>
         </div>
 
@@ -419,14 +461,56 @@
 
     <div class="section">
       <div class="section-label">Sources & Further Reading</div>
+
       <div class="section-body">
-        <p class="small" style="margin-bottom:16px;">The following sources informed this case file. They are accessible to general readers and do not require academic background.</p>
+        <p class="small" style="margin-bottom:16px;">
+          The following works informed this case file. They reflect established research in psychology, sociology, and trauma studies.
+        </p>
 
         <ul class="ref-list">
-          <li>Brown, B. (2012). <em>Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead</em>. Avery. — The definitive popular text on shame vs. guilt and why apologies fail.</li>
-          <li>Freyd, J. J. (1996). Betrayal trauma: The logic of forgetting childhood abuse. <em>Harvard University Press</em>. — The original framework for DARVO and institutional betrayal.</li>
-          <li>Tavris, C., & Aronson, E. (2007). <em>Mistakes Were Made (But Not by Me)</em>. Houghton Mifflin. — A readable, rigorous exploration of self-justification and cognitive dissonance.</li>
-          <li>Winch, G. (2013). <em>Emotional First Aid: Healing Rejection, Guilt, Failure, and Other Everyday Hurts</em>. Hudson Street Press. — Practical strategies for managing the emotional fallout of non-apology.</li>
+
+          <li>
+            Brown, B. (2012).  
+            <a href="https://brenebrown.com/book/daring-greatly/" style="color: #555" target="_blank">
+              <em>Daring Greatly</em>. Avery.
+            </a>
+          </li>
+
+          <li>
+            Freyd, J. J. (1996).  
+            <a href="https://www.jjfreyd.com/darvo" style="color: #555" target="_blank">
+              <em>Betrayal Trauma Theory</em>. Harvard University Press.
+            </a>
+          </li>
+
+          <li>
+            Tavris, C., & Aronson, E. (2007).  
+            <a href="https://en.wikipedia.org/wiki/Mistakes_Were_Made_(but_Not_by_Me)" style="color: #555" target="_blank">
+              <em>Mistakes Were Made (But Not by Me)</em>.
+            </a>
+          </li>
+
+          <li>
+            Lazare, A. (2004).  
+            <a href="https://books.google.de/books?id=VgdhUpkBklQC&redir_esc=y" style="color: #555" target="_blank">
+              <em>On Apology</em>. Oxford University Press.
+            </a>
+          </li>
+
+          <li>
+            Goffman, E. (1959). 
+            <a href="https://en.wikipedia.org/wiki/The_Presentation_of_Self_in_Everyday_Life" style="color: #555" target="_blank">
+              <em>The Presentation of Self in Everyday Life</em>. 
+            </a>
+          </li>
+
+          <li>
+            Winch, G. (2013).  
+            <a href="https://www.guywinch.com/books/emotional-first-aid/" style="color: #555" target="_blank">
+              <em>Emotional First Aid</em>. Hudson Street Press.
+            </a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -438,11 +522,11 @@
 
         <div class="submit-box">
           <div class="submit-label">SUBMIT ANONYMOUSLY</div>
-          <p>patreon.com/posts/submit-your-story-<span class="redacted"></span></p>
+          <p><a href="https://www.patreon.com/posts/submission-case-160407661" style="color: #555" target="_blank">patreon.com/posts/submit-your-story-</a></p>
           <p style="margin-top:10px; font-size:8.5pt; color:#444;">All submissions are anonymized. Selected stories may inform future case files.</p>
         </div>
 
-        <p class="small">Stories are not published verbatim. They are used to identify recurring patterns, build composite case studies, and shape the direction of future Archive entries.</p>
+        <p class="small">Submissions are not published directly. They are used as narrative material to identify recurring behavioral patterns and refine future Archive entries.</p>
       </div>
     </div>
 
@@ -538,6 +622,33 @@
     <span>THE ARCHIVE // MEMBER ACCESS</span>
   </div>
 </div>
+
+<script>
+  const audio = document.getElementById('bg-music');
+  const btn = document.getElementById('music-btn');
+  audio.volume = 0.15;
+
+  // Try autoplay on load
+  audio.play().then(() => {
+      btn.classList.add('playing');
+  }).catch(() => {
+      btn.textContent = '🔇';
+      btn.classList.add('muted');
+  });
+
+  btn.addEventListener('click', () => {
+      if (audio.paused) {
+          audio.play();
+          btn.textContent = '🎵';
+          btn.classList.remove('muted');
+          btn.classList.add('playing');
+      } else {
+          audio.muted = !audio.muted;
+          btn.textContent = audio.muted ? '🔇' : '🔉';
+          btn.classList.toggle('muted', audio.muted);
+      }
+  });
+</script>
 
 </body>
 </html>
